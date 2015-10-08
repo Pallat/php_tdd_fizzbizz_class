@@ -18,5 +18,9 @@ Class FizzBuzzSpec extends PHPUnit_Framework_TestCase {
     $fb = new FizzBuzz();
     $this->assertEquals("Fizz", $fb->tell('6'));
   }
+  function testFiveShouldBeBuzz() {
+    $fb = new FizzBuzz();
+    $this->assertEquals("Buzz", $fb->tell('5'));
+  }
 }
  ?>
